@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.github.bilbob77</groupId>
+    <artifactId>lib-jxbrowser-win_2.11</artifactId>
+    <packaging>jar</packaging>
+    <description>lib-jxbrowser-win</description>
+    <version>5.4</version>
+    <name>lib-jxbrowser-win</name>
+    <organization>
+        <name>io.github.bilbob77</name>
+    </organization>
+    <properties>
+        <github.global.server>github</github.global.server>
+    </properties>
+
+  <distributionManagement>
+      <repository>
+      <id>file</id>
+            <url>file://${basedir}/target/site</url>
+            
+             </repository>
+            </distributionManagement>
+                              
+<build>
+  <plugins>
+    <plugin>
+      <groupId>maven</groupId>
+      <artifactId>maven-deploy-plugin</artifactId>
+      <version>1.3</version>
+    </plugin>    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-site-plugin</artifactId>
+      <version>3.4</version>
+    </plugin>
+    <plugin>
+      <groupId>com.github.github</groupId>
+      <artifactId>site-maven-plugin</artifactId>
+      <version>0.12</version>
+      <configuration>
+        <message>Creating site for ${project.version}</message>
+        <repositoryName>mvn-repo</repositoryName>
+        <repositoryOwner>bilbob77</repositoryOwner>
+      </configuration>
+      <executions>
+        <execution>
+          <goals>
+            <goal>site</goal>
+          </goals>
+          <phase>site</phase>
+        </execution>
+      </executions>
+    </plugin>
+<!--<plugin>
+    <groupId>com.jakewharton</groupId>
+    <artifactId>github-deploy-maven-plugin</artifactId>
+    <version>1.0.1</version>
+    <configuration>
+        <replaceExisting>true</replaceExisting>
+        <ignoreTypes>
+            <ignoreType>java-source</ignoreType>
+        </ignoreTypes>
+    </configuration>
+    <executions>
+        <execution>
+            <goals>
+                <goal>deploy</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>-->
+  </plugins>
+
+    <extensions>
+          <!-- Enabling the use of File -->
+                <extension>
+                        <groupId>org.apache.maven.wagon</groupId>
+                                 <artifactId>wagon-file</artifactId>
+                                          <version>1.0-alpha-3</version>
+                                                </extension>
+                                                    </extensions>
+                                                    
+</build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.11.7</version>
+        </dependency>
+    </dependencies>
+</project>

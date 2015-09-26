@@ -44,7 +44,7 @@
                     
                                           <h5>Project Documentation</h5>
                   <ul>
-                                                                                                                                                                        <li class="expanded">
+                                                                                                                                                                                          <li class="expanded">
                           <a href="project-info.html" title="Project Information">Project Information</a>
                     <ul>
                       <li class="none">
@@ -53,6 +53,9 @@
                       <li class="none">
             <strong>Dependency Information</strong>
           </li>
+                      <li class="none">
+                          <a href="distribution-management.html" title="Distribution Management">Distribution Management</a>
+            </li>
                       <li class="none">
                           <a href="index.html" title="About">About</a>
             </li>
@@ -83,38 +86,38 @@
 <h3><a name="Apache_Maven"></a>Apache Maven</h3><a name="Apache_Maven"></a>
 <div class="source">
 <pre>&lt;dependency&gt;
-  &lt;groupId&gt;default&lt;/groupId&gt;
+  &lt;groupId&gt;io.github.bilbob77&lt;/groupId&gt;
   &lt;artifactId&gt;lib-jxbrowser-win_2.11&lt;/artifactId&gt;
   &lt;version&gt;5.4&lt;/version&gt;
 &lt;/dependency&gt;</pre></div></div>
 <div class="section">
 <h3><a name="Apache_Buildr"></a>Apache Buildr</h3><a name="Apache_Buildr"></a>
 <div class="source">
-<pre>'default:lib-jxbrowser-win_2.11:jar:5.4'</pre></div></div>
+<pre>'io.github.bilbob77:lib-jxbrowser-win_2.11:jar:5.4'</pre></div></div>
 <div class="section">
 <h3><a name="Apache_Ivy"></a>Apache Ivy</h3><a name="Apache_Ivy"></a>
 <div class="source">
-<pre>&lt;dependency org=&quot;default&quot; name=&quot;lib-jxbrowser-win_2.11&quot; rev=&quot;5.4&quot;&gt;
+<pre>&lt;dependency org=&quot;io.github.bilbob77&quot; name=&quot;lib-jxbrowser-win_2.11&quot; rev=&quot;5.4&quot;&gt;
   &lt;artifact name=&quot;lib-jxbrowser-win_2.11&quot; type=&quot;jar&quot; /&gt;
 &lt;/dependency&gt;</pre></div></div>
 <div class="section">
 <h3><a name="Groovy_Grape"></a>Groovy Grape</h3><a name="Groovy_Grape"></a>
 <div class="source">
 <pre>@Grapes(
-@Grab(group='default', module='lib-jxbrowser-win_2.11', version='5.4')
+@Grab(group='io.github.bilbob77', module='lib-jxbrowser-win_2.11', version='5.4')
 )</pre></div></div>
 <div class="section">
 <h3><a name="Grails"></a>Grails</h3><a name="Grails"></a>
 <div class="source">
-<pre>compile 'default:lib-jxbrowser-win_2.11:5.4'</pre></div></div>
+<pre>compile 'io.github.bilbob77:lib-jxbrowser-win_2.11:5.4'</pre></div></div>
 <div class="section">
 <h3><a name="Leiningen"></a>Leiningen</h3><a name="Leiningen"></a>
 <div class="source">
-<pre>[default/lib-jxbrowser-win_2.11 &quot;5.4&quot;]</pre></div></div>
+<pre>[io.github.bilbob77/lib-jxbrowser-win_2.11 &quot;5.4&quot;]</pre></div></div>
 <div class="section">
 <h3><a name="SBT"></a>SBT</h3><a name="SBT"></a>
 <div class="source">
-<pre>libraryDependencies += &quot;default&quot; % &quot;lib-jxbrowser-win_2.11&quot; % &quot;5.4&quot;</pre></div></div></div>
+<pre>libraryDependencies += &quot;io.github.bilbob77&quot; % &quot;lib-jxbrowser-win_2.11&quot; % &quot;5.4&quot;</pre></div></div></div>
       </div>
     </div>
     <div class="clear">
@@ -123,7 +126,7 @@
     <div id="footer">
       <div class="xright">
               Copyright &#169;                    2015
-                      default.
+                      io.github.bilbob77.
             All rights reserved.      
                     
                   </div>
